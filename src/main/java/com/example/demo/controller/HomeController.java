@@ -10,6 +10,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("message", "VSCode Spring Boot 웹사이트 성공!");
+        model.addAttribute("message", "VSCode Spring Boot 웹사이트 2번째!");
         return "index";
     }
 
