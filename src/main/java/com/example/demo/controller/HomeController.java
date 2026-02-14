@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
     @GetMapping("/")
-    public String home(Model model) {
-        model.addAttribute("message", "VSCode Spring Boot 웹사이트 성공!");
-        model.addAttribute("message", "VSCode Spring Boot 웹사이트 2번째!");
+    public String home(Model model) {        
+        model.addAttribute("message", "VSCode Spring Boot 웹사이트 develop에서 수정!");
         return "index";
     }
 
